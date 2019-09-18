@@ -34,7 +34,7 @@ exports.assetsPath = function (_path) {
   return path.posix.join(assetsSubDirectory, _path)
 }
  ```
-###6.修改build中webpack.base.conf.js 
+### 6.修改build中webpack.base.conf.js 
  ```
   output: {
     path: config.build.assetsRoot,
@@ -44,7 +44,7 @@ exports.assetsPath = function (_path) {
       : config.dev.assetsPublicPath
   }
  ```
- ###7.修改build中webpack.prod.conf.js 
+ ### 7.修改build中webpack.prod.conf.js 
  ```
 const env = require('../config/'+process.env.NODE_ENV+'.env')
  ```
